@@ -1,0 +1,385 @@
+/* Universal Box Sizing & Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Body Styling with Purple Gradient Background */
+/* Base Body Styling with Purple to Sky Blue Gradient */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #2c3e50;
+    /* Starts purple at the top, transitions smoothly down into sky blue */
+    background: linear-gradient(180deg, #4a154b 0%, #3b0764 25%, #38bdf8 70%, #bae6fd 100%);
+    background-attachment: fixed; /* Keeps the background smooth while scrolling */
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Header & Main Heading Styling */
+header {
+    background-color: #2e1065;
+    color: #ffffff;
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #f3e8ff;
+}
+
+/* Navigation Bar Styling */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #c084fc;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 16px;
+    border: 1px solid #c084fc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #c084fc;
+    color: #2e1065;
+}
+
+/* Main Content Container & Card Sections */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.content-section {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    border-left: 5px solid #9333ea;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Headings */
+h2 {
+    color: #3b0764;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #f3e8ff;
+}
+
+h3 {
+    color: #7e22ce;
+    margin: 15px 0 10px 0;
+}
+
+/* --- PHOTO GALLERY STYLING (Uniform Image Sizes) --- */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.gallery figure {
+    flex: 1 1 250px;
+    max-width: 280px;
+    text-align: center;
+    background-color: #fcf7ff;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #e9d5ff;
+}
+
+.gallery img {
+    width: 100%;
+    height: 220px;            /* Fixed uniform height for all 3 images */
+    object-fit: cover;        /* Prevents distortion while filling space */
+    border-radius: 6px;
+    display: block;
+}
+
+.gallery figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #581c87;
+    font-weight: 500;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #f3e8ff;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+/* Media Section Video Styling */
+/* Media Section Video Styling */
+/* Media Section Video Styling */
+video {
+    width: 100%;
+    max-width: 850px;
+    height: 480px;            /* Set explicit height (adjust between 400px - 550px as desired) */
+    object-fit: contain;      /* Keeps original video proportions without stretching */
+    display: block;
+    margin: 20px auto;
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+/* --- CONTACT FORM STYLING --- */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #3b0764;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e9d5ff;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #faf5ff;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #9333ea;
+    box-shadow: 0 0 8px rgba(147, 51, 234, 0.3);
+    background-color: #ffffff;
+}
+
+/* Submit Button Styling */
+button[type="submit"] {
+    background: linear-gradient(135deg, #7e22ce 0%, #3b0764 100%);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: inline-block;
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 7, 100, 0.3);
+}
+
+button[type="submit"]:active {
+    transform: translateY(0);
+}
+/* --- CONTACT FORM STYLING --- */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #3b0764;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e9d5ff;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #faf5ff;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #9333ea;
+    box-shadow: 0 0 8px rgba(147, 51, 234, 0.3);
+    background-color: #ffffff;
+}
+
+/* Submit Button Styling */
+button[type="submit"] {
+    background: linear-gradient(135deg, #7e22ce 0%, #3b0764 100%);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: inline-block;
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 7, 100, 0.3);
+}
+
+button[type="submit"]:active {
+    transform: translateY(0);
+}
+/* --- TABLE STYLING --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #f3e8ff;
+}
+
+th {
+    background-color: #3b0764;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #fcf7ff;
+}
+/* --- HELPER & INTERACTIVE FEATURE STYLES --- */
+
+/* Hidden Utility Class */
+.hidden {
+    display: none !important;
+}
+
+/* Dark Mode Theme Styles */
+body.dark-mode {
+    background: linear-gradient(180deg, #0f172a 0%, #1e1b4b 100%);
+    color: #f1f5f9;
+}
+
+body.dark-mode .content-section {
+    background-color: #1e293b;
+    color: #f8fafc;
+    border-left-color: #c084fc;
+}
+
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode label {
+    color: #e2e8f0;
+}
+
+/* Project Cards & Expandable Content */
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.project-card {
+    background: #f8fafc;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+body.dark-mode .project-card {
+    background: #0f172a;
+    border-color: #334155;
+}
+
+.project-details {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed #cbd5e1;
+    color: #475569;
+}
+
+body.dark-mode .project-details {
+    color: #94a3b8;
+    border-top-color: #334155;
+}
+
+/* Interactive Buttons */
+.toggle-btn, .theme-btn, #calc-btn {
+    background-color: #7e22ce;
+    color: #ffffff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 8px 0;
+    transition: background-color 0.2s ease;
+}
+
+.toggle-btn:hover, .theme-btn:hover, #calc-btn:hover {
+    background-color: #6b21a8;
+}
+
+.theme-btn {
+    margin-top: 12px;
+}
+
+/* Form Preview Box */
+.form-preview-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0fdf4;
+    border: 2px solid #22c55e;
+    border-radius: 8px;
+    color: #15803d;
+}
+
+body.dark-mode .form-preview-box {
+    background-color: #064e3b;
+    border-color: #10b981;
+    color: #ecfdf5;
+}
+
+/* Calculator Output */
+.calc-output {
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: 1.1rem;
+}

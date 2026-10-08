@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my first web page</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<script src="js/script.js" defer></script>
+<body>
+    <header>
+        <h1>Progress Njekwa's Personal Portfolio</h1>
+        <nav>
+            <a href="#about">About Me</a> | 
+            <a href="#hobbies">My Hobbies</a> | 
+            <a href="#plan">Learning Plan</a> | 
+            <a href="#photos">My Photos</a> | 
+            <a href="#media">My Media</a> | 
+            <a href="#contact">Contact</a> | 
+            <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a>
+        </nav>
+        <button id="theme-toggle-btn" class="theme-btn">🌙 Dark Mode</button>
+    </header>
+
+    <main>
+        <!-- Section 1: About Me -->
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+            <p>
+                My name is Progress Njekwa, and I am currently in my second year of studying 
+                for a Bachelor of Science in Computer Science at Mulungushi University.
+                Although web development was first assigned to me as part of my second-year coursework,
+                it quickly sparked a genuine interest that has grown far beyond the classroom.
+                I am particularly drawn to UI/UX design and the practical technologies that bring ideas
+                to life on the web. Right now I am working on my very first web development project,
+                which has given me the exciting opportunity to explore how HTML5 and CSS work together
+                to create clean, functional, and visually appealing interfaces. This hands-on
+                experience has deepened my passion for the f4ield and motivates me to keep learning and building.
+            </p>
+        </section>
+
+        <!-- Section 2: My Hobbies -->
+        <section id="hobbies" class="content-section">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Playing keyboard and music production</li>
+                <li>Coding and problem solving</li>
+                <li>Playing video games</li>
+            </ul>
+        </section>
+
+            <section id="plan" class="content-section"1>
+                <h2>Learning Plan</h2>
+                <p>
+                    My learning plan focuses on mastering the fundamentals of web development, including HTML5,
+                    CSS3, and JavaScript. I also aim to gain proficiency in UI/UX design principles and responsive
+                    design techniques.
+                </p>
+
+                <h3>Steps to Improve My Web Skills</h3>
+    <ol>
+                    <li>Practice coding HTML and CSS everyday for atleast 30 minutes daily</li>
+                    <li>Build personal projects to apply new techniches and layout styles</li>
+                    <li>Build a portfolio of web development work</li>
+                </ol>
+                <h3>Web Development Goals</h3>
+                <table>
+                    <caption>Weekly web learning schedule</caption>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Topic</th>
+                            <th>Practice task</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>HTML5 Semantics</td>
+                            <td>Structure page layout with header and main tags</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>CSS box model</td>
+                            <td>Add padding, borders, and margins to sections</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>Media and forms</td>
+                            <td>Embed videos and build a contact form</td>
+                    </tbody>        
+                </table>
+        </section>
+        <!-- Study Hours Calculator Section -->
+<section id="study-calculator" class="content-section">
+    <h2>Weekly Study Hours Calculator</h2>
+    <form id="calc-form">
+        <div class="form-group">
+            <label for="hours-per-day">Planned Hours Per Day:</label>
+            <input type="number" id="hours-per-day" placeholder="e.g., 3" min="0" step="0.5">
+        </div>
+        <div class="form-group">
+            <label for="days-per-week">Days Per Week (1–7):</label>
+            <input type="number" id="days-per-week" placeholder="e.g., 5" min="1" max="7">
+        </div>
+        <button type="button" id="calc-btn">Calculate Total Hours</button>
+    </form>
+    <p id="calc-result" class="calc-output"></p>
+</section>
+<!-- Projects & Skills Section -->
+<section id="projects" class="content-section">
+    <h2>My Projects & Skills</h2>
+    <div class="projects-grid">
+        <article class="project-card">
+            <h3>Responsive Web Design</h3>
+            <p>Mastered semantic HTML5 structures, CSS grid/flexbox layouts, and responsive styling.</p>
+            <button class="toggle-btn">Show Details</button>
+            <p class="project-details hidden">Used CSS Flexbox and media queries to ensure smooth viewing across mobile and desktop devices.</p>
+        </article>
+
+        <article class="project-card">
+            <h3>Java & Data Structures</h3>
+            <p>Developed core object-oriented programming concepts and algorithm design.</p>
+            <button class="toggle-btn">Show Details</button>
+            <p class="project-details hidden">Implemented custom stack structures, array search operations, and logic workflows.</p>
+        </article>
+
+        <article class="project-card">
+            <h3>Matrix & Numeric Computing</h3>
+            <p>Applied Python and MATLAB for vectorized calculations and numeric processing.</p>
+            <button class="toggle-btn">Show Details</button>
+            <p class="project-details hidden">Built algorithm workflows and array manipulations using standard scientific computing tools.</p>
+        </article>
+    </div>
+</section>
+        <!-- Section 4: My Photos -->
+<section id="photos" class="content-section">
+    <h2>My Photos</h2>
+    <div class="gallery">
+        <figure>
+            <img src="images/photo1.jpg" alt="Progress working at his computer desk">
+            <figcaption>Working on programming coursework.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/photo2.jpg" alt="Yamaha keyboard setup for music production">
+            <figcaption>Practicing music on my synthesizer keyboard.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/photo3.jpg" alt="Mulungushi University campus view">
+            <figcaption>At the Mulungushi University campus.</figcaption>
+        </figure>
+    </div>
+</section>
+<!-- Section 5: My Media -->
+<section id="media" class="content-section">
+    <h2>My Media</h2>
+
+    <!-- Video Subsection -->
+    <div class="media-container">
+        <h3>Self Introduction Video</h3>
+        <video controls width="100%">
+            <source src="videos/intro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h4>Video Transcript / Summary</h4>
+        <p>
+            Hello everyone! My name is Progress Njekwa, and I am a second-year student 
+            pursuing a Bachelor of Science in Computer Science at Mulungushi University. 
+            In this course, ICT251 Web Technologies, I hope to master responsive web design 
+            and modern CSS layout techniques.
+        </p>
+    </div>
+
+    <!-- Audio Subsection -->
+    <div class="media-container">
+        <h3>Audio Clip</h3>
+        <audio controls>
+            <source src="videos/voice.m4a" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <p>This recording briefly describes my passion for studying web technologies and programming.</p>
+    </div>
+</section>
+<!-- Section 6: Contact -->
+<section id="contact" class="content-section">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out to me! <em>(Note: This form is a browser demonstration only and does not send live data.)</em></p>
+    
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="user-name">Progress Njekwa:</label>
+            <input type="text" id="user-name" name="name" required placeholder="Enter your full name">
+        </div>
+
+        <div class="form-group">
+            <label for="user-email">progressnjekwa@email.com:</label>
+            <input type="email" id="user-email" name="email" required placeholder="name@example.com">
+        </div>
+
+        <div class="form-group">
+            <label for="subject-topic">Select Topic:</label>
+            <select id="subject-topic" name="topic">
+                <option value="general">General Inquiry</option>
+                <option value="collaboration">Project Collaboration</option>
+                <option value="feedback">Website Feedback</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="user-message">Your Message:</label>
+            <textarea id="user-message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+    </form>
+    <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Local Form Submission Preview Box -->
+    <div id="form-preview" class="form-preview-box hidden"></div>
+</section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Progress Njekwa. Built for ICT251 Web Technologies.</p>
+</footer>
+
+</body>
+</html>            
