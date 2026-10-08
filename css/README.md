@@ -16,4 +16,4 @@ This repository contains the interactive student portfolio for ICT251 Web Techno
 4. **Study Hours Calculator:** Accepts planned daily hours and days per week to output weekly total study time with input validation.
 
 ## Live Deployment
-- **Render Public Link:** [Insert your Render URL here after deployment]
+- **Render Public Link:** [(https://web-tech-portfolio-assignment.onrender.com)]
